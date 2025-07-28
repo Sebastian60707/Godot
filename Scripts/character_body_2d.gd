@@ -14,6 +14,9 @@ var last_direction = Vector2.DOWN
 var is_moving = false
 
 func _ready():
+	# Añadir al grupo de jugadores
+	add_to_group("player")
+	
 	# Configurar la cámara
 	camera.enabled = true
 	# Inicializar animación
